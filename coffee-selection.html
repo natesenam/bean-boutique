@@ -1,241 +1,331 @@
 <!-- coffee-selection.html -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Our Coffee Selection - Bean Boutique</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
     <!-- Hero Section -->
     <header class="coffee-selection-hero">
-        <!-- Navigation Bar -->
-        <nav class="navbar">
-            <div class="nav-container">
-                <div class="brand">
-                    <a href="index.html"><h2 class="brand-name">Bean Boutique</h2></a>
-                </div>
-                <ul class="nav-links">
-                    <li><a href="index.html#home">Home</a></li>
-                    <li><a href="coffee-selection.html#coffee">Our Coffee</a></li>
-                    <li><a href="equipment-selection.html">Equipment</a></li>
-                    <li><a href="events-selection.html">Events</a></li>
-                    <li><a href="index.html#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
+      <!-- Navigation Bar -->
+      <nav class="navbar">
+        <div class="nav-container">
+          <div class="brand">
+            <a href="index.html"><h2 class="brand-name">Bean Boutique</h2></a>
+          </div>
+          <ul class="nav-links">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="coffee-selection.html#coffee">Our Coffee</a></li>
+            <li><a href="equipment-selection.html">Equipment</a></li>
+            <li><a href="events-selection.html">Events</a></li>
+            <li><a href="offers.html">Offers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+              <a href="cart.html" class="cart-link">
+                <svg
+                  class="cart-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"
+                  ></path>
+                  <line x1="3" y1="6" x2="21" y2="6"></line>
+                  <path d="M16 10a4 4 0 0 1-8 0"></path>
+                </svg>
+                <span class="cart-badge">0</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
-        <!-- Hero Content -->
-        <section class="coffee-selection-hero-content">
-            <div class="coffee-selection-hero-text">
-                <h1 class="coffee-selection-hero-heading">Our Coffee Selection</h1>
-                <p class="coffee-selection-hero-subheading">Discover our carefully curated collection of artisan roasts and single-origin beans, each with its own unique story and flavor profile.</p>
-            </div>
-        </section>
+      <!-- Hero Content -->
+      <section class="coffee-selection-hero-content">
+        <div class="coffee-selection-hero-text">
+          <h1 class="coffee-selection-hero-heading">Our Coffee Selection</h1>
+          <p class="coffee-selection-hero-subheading">
+            Discover our carefully curated collection of artisan roasts and
+            single-origin beans, each with its own unique story and flavor
+            profile.
+          </p>
+        </div>
+      </section>
     </header>
 
     <!-- Coffee Selection Section -->
     <section class="coffee-selection" id="coffee">
-        <div class="container">
-            <!-- Coffee Grid -->
-            <div class="coffee-grid">
-                
-                <!-- Coffee Card 1 -->
-                <article class="coffee-card">
-                    <figure class="coffee-image-wrapper">
-                        <img src="images/ethopian.jpeg" alt="Ethiopian Yirgacheffe single-origin coffee beans" class="coffee-image">
-                        <span class="coffee-badge badge-origin">Single Origin</span>
-                    </figure>
-                    <div class="coffee-content">
-                        <h3 class="coffee-name">Ethiopian Yirgacheffe</h3>
-                        <p class="coffee-description">Bright and floral with delicate citrus notes, this Ethiopian heirloom variety offers a tea-like body and complex sweetness.</p>
-                        <div class="tasting-notes">
-                            <span class="note">Bergamot</span>
-                            <span class="note">Blueberry</span>
-                            <span class="note">Jasmine</span>
-                        </div>
-                        <div class="brewing-methods">
-                            <span class="method">Pour Over</span>
-                            <span class="method">Chemex</span>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Coffee Card 2 -->
-                <article class="coffee-card">
-                    <figure class="coffee-image-wrapper">
-                        <img src="images/house-blend.jpeg" alt="House Blend artisan coffee" class="coffee-image">
-                        <span class="coffee-badge badge-blend">Signature Blend</span>
-                    </figure>
-                    <div class="coffee-content">
-                        <h3 class="coffee-name">House Blend</h3>
-                        <p class="coffee-description">Our signature blend balances rich chocolate notes with a smooth caramel finish, perfect for everyday enjoyment.</p>
-                        <div class="tasting-notes">
-                            <span class="note">Chocolate</span>
-                            <span class="note">Caramel</span>
-                            <span class="note">Hazelnut</span>
-                        </div>
-                        <div class="brewing-methods">
-                            <span class="method">Espresso</span>
-                            <span class="method">Drip</span>
-                            <span class="method">French Press</span>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Coffee Card 3 -->
-                <article class="coffee-card">
-                    <figure class="coffee-image-wrapper">
-                        <img src="images/columbian.jpeg" alt="Colombian Supremo single-origin coffee" class="coffee-image">
-                        <span class="coffee-badge badge-origin">Single Origin</span>
-                    </figure>
-                    <div class="coffee-content">
-                        <h3 class="coffee-name">Colombian Supremo</h3>
-                        <p class="coffee-description">Medium-bodied with balanced acidity, featuring notes of brown sugar and hints of tropical fruit from high-altitude farms.</p>
-                        <div class="tasting-notes">
-                            <span class="note">Brown Sugar</span>
-                            <span class="note">Red Apple</span>
-                            <span class="note">Almond</span>
-                        </div>
-                        <div class="brewing-methods">
-                            <span class="method">Espresso</span>
-                            <span class="method">Pour Over</span>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Coffee Card 4 -->
-                <article class="coffee-card">
-                    <figure class="coffee-image-wrapper">
-                        <img src="images/sumatra.jpeg" alt="Sumatra Mandheling dark roast coffee" class="coffee-image">
-                        <span class="coffee-badge badge-origin">Single Origin</span>
-                    </figure>
-                    <div class="coffee-content">
-                        <h3 class="coffee-name">Sumatra Mandheling</h3>
-                        <p class="coffee-description">Full-bodied and earthy with low acidity, this Indonesian coffee delivers rich, syrupy sweetness with herbal complexity.</p>
-                        <div class="tasting-notes">
-                            <span class="note">Dark Chocolate</span>
-                            <span class="note">Cedar</span>
-                            <span class="note">Molasses</span>
-                        </div>
-                        <div class="brewing-methods">
-                            <span class="method">French Press</span>
-                            <span class="method">Cold Brew</span>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Coffee Card 5 -->
-                <article class="coffee-card">
-                    <figure class="coffee-image-wrapper">
-                        <img src="images/morning glory.jpeg" alt="Morning Glory breakfast blend coffee" class="coffee-image">
-                        <span class="coffee-badge badge-blend">Signature Blend</span>
-                    </figure>
-                    <div class="coffee-content">
-                        <h3 class="coffee-name">Morning Glory</h3>
-                        <p class="coffee-description">A bright breakfast blend combining Central American beans for a clean, vibrant cup that awakens the senses.</p>
-                        <div class="tasting-notes">
-                            <span class="note">Citrus</span>
-                            <span class="note">Honey</span>
-                            <span class="note">Cashew</span>
-                        </div>
-                        <div class="brewing-methods">
-                            <span class="method">Drip</span>
-                            <span class="method">Pour Over</span>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Coffee Card 6 -->
-                <article class="coffee-card">
-                    <figure class="coffee-image-wrapper">
-                        <img src="images/guatemala Antigua.jpeg" alt="Guatemala Antigua volcanic coffee beans" class="coffee-image">
-                        <span class="coffee-badge badge-origin">Single Origin</span>
-                    </figure>
-                    <div class="coffee-content">
-                        <h3 class="coffee-name">Guatemala Antigua</h3>
-                        <p class="coffee-description">Grown in volcanic soil, this coffee offers intense cocoa flavors with a smoky finish and velvety body.</p>
-                        <div class="tasting-notes">
-                            <span class="note">Cocoa</span>
-                            <span class="note">Smoke</span>
-                            <span class="note">Spice</span>
-                        </div>
-                        <div class="brewing-methods">
-                            <span class="method">Espresso</span>
-                            <span class="method">Moka Pot</span>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Coffee Card 7 -->
-                <article class="coffee-card">
-                    <figure class="coffee-image-wrapper">
-                        <img src="images/swiss water decaf.jpeg" alt="Decaf Swiss Water Process coffee" class="coffee-image">
-                        <span class="coffee-badge badge-blend">Decaf</span>
-                    </figure>
-                    <div class="coffee-content">
-                        <h3 class="coffee-name">Swiss Water Decaf</h3>
-                        <p class="coffee-description">All the flavor without the caffeine, processed naturally to preserve rich chocolate and nutty characteristics.</p>
-                        <div class="tasting-notes">
-                            <span class="note">Milk Chocolate</span>
-                            <span class="note">Walnut</span>
-                            <span class="note">Vanilla</span>
-                        </div>
-                        <div class="brewing-methods">
-                            <span class="method">Drip</span>
-                            <span class="method">French Press</span>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Coffee Card 8 -->
-                <article class="coffee-card">
-                    <figure class="coffee-image-wrapper">
-                        <img src="images/costa rica tarrazu.jpeg" alt="Costa Rican Tarrazu honey processed coffee" class="coffee-image">
-                        <span class="coffee-badge badge-origin">Single Origin</span>
-                    </figure>
-                    <div class="coffee-content">
-                        <h3 class="coffee-name">Costa Rica Tarrazu</h3>
-                        <p class="coffee-description">Honey-processed beans from high altitudes create exceptional sweetness with bright acidity and crisp apple notes.</p>
-                        <div class="tasting-notes">
-                            <span class="note">Green Apple</span>
-                            <span class="note">Honey</span>
-                            <span class="note">Lemon</span>
-                        </div>
-                        <div class="brewing-methods">
-                            <span class="method">Pour Over</span>
-                            <span class="method">Aeropress</span>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Coffee Card 9 -->
-                <article class="coffee-card">
-                    <figure class="coffee-image-wrapper">
-                        <img src="images/espresso Intenso.jpeg" alt="Espresso Intenso dark roast blend" class="coffee-image">
-                        <span class="coffee-badge badge-blend">Signature Blend</span>
-                    </figure>
-                    <div class="coffee-content">
-                        <h3 class="coffee-name">Espresso Intenso</h3>
-                        <p class="coffee-description">Our boldest blend crafted specifically for espresso, delivering intense crema and deep chocolate-caramel flavors.</p>
-                        <div class="tasting-notes">
-                            <span class="note">Dark Chocolate</span>
-                            <span class="note">Caramelized Sugar</span>
-                            <span class="note">Toasted Nuts</span>
-                        </div>
-                        <div class="brewing-methods">
-                            <span class="method">Espresso</span>
-                            <span class="method">Moka Pot</span>
-                        </div>
-                    </div>
-                </article>
-
+      <div class="container">
+        <!-- Coffee Grid -->
+        <div class="coffee-grid">
+          <!-- Coffee Card 1 -->
+          <article class="coffee-card">
+            <figure class="coffee-image-wrapper">
+              <img
+                src="images/ethopian.jpeg"
+                alt="Ethiopian Yirgacheffe single-origin coffee beans"
+                class="coffee-image"
+              />
+              <span class="coffee-badge badge-origin">Single Origin</span>
+            </figure>
+            <div class="coffee-content">
+              <h3 class="coffee-name">Ethiopian Yirgacheffe</h3>
+              <p class="coffee-description">
+                Bright and floral with delicate citrus notes, this Ethiopian
+                heirloom variety offers a tea-like body and complex sweetness.
+              </p>
+              <div class="tasting-notes">
+                <span class="note">Bergamot</span>
+                <span class="note">Blueberry</span>
+                <span class="note">Jasmine</span>
+              </div>
+              <div class="brewing-methods">
+                <span class="method">Pour Over</span>
+                <span class="method">Chemex</span>
+              </div>
             </div>
+          </article>
+
+          <!-- Coffee Card 2 -->
+          <article class="coffee-card">
+            <figure class="coffee-image-wrapper">
+              <img
+                src="images/house-blend.jpeg"
+                alt="House Blend artisan coffee"
+                class="coffee-image"
+              />
+              <span class="coffee-badge badge-blend">Signature Blend</span>
+            </figure>
+            <div class="coffee-content">
+              <h3 class="coffee-name">House Blend</h3>
+              <p class="coffee-description">
+                Our signature blend balances rich chocolate notes with a smooth
+                caramel finish, perfect for everyday enjoyment.
+              </p>
+              <div class="tasting-notes">
+                <span class="note">Chocolate</span>
+                <span class="note">Caramel</span>
+                <span class="note">Hazelnut</span>
+              </div>
+              <div class="brewing-methods">
+                <span class="method">Espresso</span>
+                <span class="method">Drip</span>
+                <span class="method">French Press</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Coffee Card 3 -->
+          <article class="coffee-card">
+            <figure class="coffee-image-wrapper">
+              <img
+                src="images/columbian.jpeg"
+                alt="Colombian Supremo single-origin coffee"
+                class="coffee-image"
+              />
+              <span class="coffee-badge badge-origin">Single Origin</span>
+            </figure>
+            <div class="coffee-content">
+              <h3 class="coffee-name">Colombian Supremo</h3>
+              <p class="coffee-description">
+                Medium-bodied with balanced acidity, featuring notes of brown
+                sugar and hints of tropical fruit from high-altitude farms.
+              </p>
+              <div class="tasting-notes">
+                <span class="note">Brown Sugar</span>
+                <span class="note">Red Apple</span>
+                <span class="note">Almond</span>
+              </div>
+              <div class="brewing-methods">
+                <span class="method">Espresso</span>
+                <span class="method">Pour Over</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Coffee Card 4 -->
+          <article class="coffee-card">
+            <figure class="coffee-image-wrapper">
+              <img
+                src="images/sumatra.jpeg"
+                alt="Sumatra Mandheling dark roast coffee"
+                class="coffee-image"
+              />
+              <span class="coffee-badge badge-origin">Single Origin</span>
+            </figure>
+            <div class="coffee-content">
+              <h3 class="coffee-name">Sumatra Mandheling</h3>
+              <p class="coffee-description">
+                Full-bodied and earthy with low acidity, this Indonesian coffee
+                delivers rich, syrupy sweetness with herbal complexity.
+              </p>
+              <div class="tasting-notes">
+                <span class="note">Dark Chocolate</span>
+                <span class="note">Cedar</span>
+                <span class="note">Molasses</span>
+              </div>
+              <div class="brewing-methods">
+                <span class="method">French Press</span>
+                <span class="method">Cold Brew</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Coffee Card 5 -->
+          <article class="coffee-card">
+            <figure class="coffee-image-wrapper">
+              <img
+                src="images/morning glory.jpeg"
+                alt="Morning Glory breakfast blend coffee"
+                class="coffee-image"
+              />
+              <span class="coffee-badge badge-blend">Signature Blend</span>
+            </figure>
+            <div class="coffee-content">
+              <h3 class="coffee-name">Morning Glory</h3>
+              <p class="coffee-description">
+                A bright breakfast blend combining Central American beans for a
+                clean, vibrant cup that awakens the senses.
+              </p>
+              <div class="tasting-notes">
+                <span class="note">Citrus</span>
+                <span class="note">Honey</span>
+                <span class="note">Cashew</span>
+              </div>
+              <div class="brewing-methods">
+                <span class="method">Drip</span>
+                <span class="method">Pour Over</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Coffee Card 6 -->
+          <article class="coffee-card">
+            <figure class="coffee-image-wrapper">
+              <img
+                src="images/guatemala Antigua.jpeg"
+                alt="Guatemala Antigua volcanic coffee beans"
+                class="coffee-image"
+              />
+              <span class="coffee-badge badge-origin">Single Origin</span>
+            </figure>
+            <div class="coffee-content">
+              <h3 class="coffee-name">Guatemala Antigua</h3>
+              <p class="coffee-description">
+                Grown in volcanic soil, this coffee offers intense cocoa flavors
+                with a smoky finish and velvety body.
+              </p>
+              <div class="tasting-notes">
+                <span class="note">Cocoa</span>
+                <span class="note">Smoke</span>
+                <span class="note">Spice</span>
+              </div>
+              <div class="brewing-methods">
+                <span class="method">Espresso</span>
+                <span class="method">Moka Pot</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Coffee Card 7 -->
+          <article class="coffee-card">
+            <figure class="coffee-image-wrapper">
+              <img
+                src="images/swiss water decaf.jpeg"
+                alt="Decaf Swiss Water Process coffee"
+                class="coffee-image"
+              />
+              <span class="coffee-badge badge-blend">Decaf</span>
+            </figure>
+            <div class="coffee-content">
+              <h3 class="coffee-name">Swiss Water Decaf</h3>
+              <p class="coffee-description">
+                All the flavor without the caffeine, processed naturally to
+                preserve rich chocolate and nutty characteristics.
+              </p>
+              <div class="tasting-notes">
+                <span class="note">Milk Chocolate</span>
+                <span class="note">Walnut</span>
+                <span class="note">Vanilla</span>
+              </div>
+              <div class="brewing-methods">
+                <span class="method">Drip</span>
+                <span class="method">French Press</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Coffee Card 8 -->
+          <article class="coffee-card">
+            <figure class="coffee-image-wrapper">
+              <img
+                src="images/costa rica tarrazu.jpeg"
+                alt="Costa Rican Tarrazu honey processed coffee"
+                class="coffee-image"
+              />
+              <span class="coffee-badge badge-origin">Single Origin</span>
+            </figure>
+            <div class="coffee-content">
+              <h3 class="coffee-name">Costa Rica Tarrazu</h3>
+              <p class="coffee-description">
+                Honey-processed beans from high altitudes create exceptional
+                sweetness with bright acidity and crisp apple notes.
+              </p>
+              <div class="tasting-notes">
+                <span class="note">Green Apple</span>
+                <span class="note">Honey</span>
+                <span class="note">Lemon</span>
+              </div>
+              <div class="brewing-methods">
+                <span class="method">Pour Over</span>
+                <span class="method">Aeropress</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Coffee Card 9 -->
+          <article class="coffee-card">
+            <figure class="coffee-image-wrapper">
+              <img
+                src="images/espresso Intenso.jpeg"
+                alt="Espresso Intenso dark roast blend"
+                class="coffee-image"
+              />
+              <span class="coffee-badge badge-blend">Signature Blend</span>
+            </figure>
+            <div class="coffee-content">
+              <h3 class="coffee-name">Espresso Intenso</h3>
+              <p class="coffee-description">
+                Our boldest blend crafted specifically for espresso, delivering
+                intense crema and deep chocolate-caramel flavors.
+              </p>
+              <div class="tasting-notes">
+                <span class="note">Dark Chocolate</span>
+                <span class="note">Caramelized Sugar</span>
+                <span class="note">Toasted Nuts</span>
+              </div>
+              <div class="brewing-methods">
+                <span class="method">Espresso</span>
+                <span class="method">Moka Pot</span>
+              </div>
+            </div>
+          </article>
         </div>
+      </div>
     </section>
 
+    <script src="cart.js"></script>
+    <script src="add-to-cart.js"></script>
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
-

@@ -1,227 +1,326 @@
 <!-- equipment-selection.html -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Brewing Equipment - Bean Boutique</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
     <!-- Hero Section -->
     <header class="equipment-selection-hero">
-        <!-- Navigation Bar -->
-        <nav class="navbar">
-            <div class="nav-container">
-                <div class="brand">
-                    <a href="index.html"><h2 class="brand-name">Bean Boutique</h2></a>
-                </div>
-                <ul class="nav-links">
-                    <li><a href="index.html#home">Home</a></li>
-                    <li><a href="coffee-selection.html#coffee">Our Coffee</a></li>
-                    <li><a href="equipment-selection.html#equipment">Equipment</a></li>
-                    <li><a href="events-selection.html">Events</a></li>
-                    <li><a href="index.html#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
+      <!-- Navigation Bar -->
+      <nav class="navbar">
+        <div class="nav-container">
+          <div class="brand">
+            <a href="index.html"><h2 class="brand-name">Bean Boutique</h2></a>
+          </div>
+          <ul class="nav-links">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="coffee-selection.html#coffee">Our Coffee</a></li>
+            <li><a href="equipment-selection.html#equipment">Equipment</a></li>
+            <li><a href="events-selection.html">Events</a></li>
+            <li><a href="offers.html">Offers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+              <a href="cart.html" class="cart-link">
+                <svg
+                  class="cart-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"
+                  ></path>
+                  <line x1="3" y1="6" x2="21" y2="6"></line>
+                  <path d="M16 10a4 4 0 0 1-8 0"></path>
+                </svg>
+                <span class="cart-badge">0</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
-        <!-- Hero Content -->
-        <section class="equipment-selection-hero-content">
-            <div class="equipment-selection-hero-text">
-                <h1 class="equipment-selection-hero-heading">Brewing Equipment</h1>
-                <p class="equipment-selection-hero-subheading">Premium tools crafted for the perfect cup. Explore our curated collection of brewing essentials, from espresso machines to pour-over drippers.</p>
-            </div>
-        </section>
+      <!-- Hero Content -->
+      <section class="equipment-selection-hero-content">
+        <div class="equipment-selection-hero-text">
+          <h1 class="equipment-selection-hero-heading">Brewing Equipment</h1>
+          <p class="equipment-selection-hero-subheading">
+            Premium tools crafted for the perfect cup. Explore our curated
+            collection of brewing essentials, from espresso machines to
+            pour-over drippers.
+          </p>
+        </div>
+      </section>
     </header>
 
     <!-- Brewing Equipment Section -->
     <section class="brewing-equipment" id="equipment">
-        <div class="container">
-            <!-- Equipment Grid -->
-            <div class="equipment-grid">
-                
-                <!-- Equipment Card 1 -->
-                <article class="equipment-card">
-                    <figure class="equipment-image-wrapper">
-                        <img src="images/espresso machine.jpeg" alt="Professional espresso machine with dual boiler system" class="equipment-image">
-                        <span class="equipment-badge badge-bestseller">Bestseller</span>
-                    </figure>
-                    <div class="equipment-content">
-                        <h3 class="equipment-name">Professional Espresso Machine</h3>
-                        <p class="equipment-description">Dual boiler system with PID temperature control ensures precise extraction and consistent steam pressure for café-quality espresso at home.</p>
-                        <div class="usage-tips">
-                            <h4 class="tips-title">Brewing Tips:</h4>
-                            <ul class="tips-list">
-                                <li>Preheat machine for 20 minutes before brewing</li>
-                                <li>Use 18-20g of finely ground coffee for double shots</li>
-                                <li>Maintain water temperature at 93-96°C</li>
-                            </ul>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Equipment Card 2 -->
-                <article class="equipment-card">
-                    <figure class="equipment-image-wrapper">
-                        <img src="images/pour over device.jpeg" alt="Copper pour-over dripper with wooden handle" class="equipment-image">
-                        <span class="equipment-badge badge-featured">Featured</span>
-                    </figure>
-                    <div class="equipment-content">
-                        <h3 class="equipment-name">Copper Pour-Over Dripper</h3>
-                        <p class="equipment-description">Handcrafted copper dripper with superior heat retention and elegant design. Perfect for bringing out the delicate notes in single-origin beans.</p>
-                        <div class="usage-tips">
-                            <h4 class="tips-title">Brewing Tips:</h4>
-                            <ul class="tips-list">
-                                <li>Use medium-fine grind, similar to table salt</li>
-                                <li>Start with a 30-second bloom phase</li>
-                                <li>Pour in circular motions for even extraction</li>
-                            </ul>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Equipment Card 3 -->
-                <article class="equipment-card">
-                    <figure class="equipment-image-wrapper">
-                        <img src="images/french press.jpeg" alt="French press coffee maker with borosilicate glass" class="equipment-image">
-                    </figure>
-                    <div class="equipment-content">
-                        <h3 class="equipment-name">French Press</h3>
-                        <p class="equipment-description">Classic brewing method with borosilicate glass carafe and stainless steel plunger. Produces full-bodied, rich coffee with natural oils intact.</p>
-                        <div class="usage-tips">
-                            <h4 class="tips-title">Brewing Tips:</h4>
-                            <ul class="tips-list">
-                                <li>Use coarse grind to prevent sediment</li>
-                                <li>Steep for 4 minutes before plunging</li>
-                                <li>Pour immediately to avoid over-extraction</li>
-                            </ul>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Equipment Card 4 -->
-                <article class="equipment-card">
-                    <figure class="equipment-image-wrapper">
-                        <img src="images/precision burr grinder.jpeg" alt="Precision burr coffee grinder with adjustable settings" class="equipment-image">
-                        <span class="equipment-badge badge-bestseller">Bestseller</span>
-                    </figure>
-                    <div class="equipment-content">
-                        <h3 class="equipment-name">Precision Burr Grinder</h3>
-                        <p class="equipment-description">Conical burr grinder with 40 grind settings. From espresso-fine to French press coarse, achieve consistent particle size for optimal extraction.</p>
-                        <div class="usage-tips">
-                            <h4 class="tips-title">Usage Tips:</h4>
-                            <ul class="tips-list">
-                                <li>Grind beans immediately before brewing</li>
-                                <li>Clean burrs weekly for best performance</li>
-                                <li>Adjust settings based on brewing method</li>
-                            </ul>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Equipment Card 5 -->
-                <article class="equipment-card">
-                    <figure class="equipment-image-wrapper">
-                        <img src="images/gooseneck kettle.jpeg" alt="Gooseneck electric kettle with temperature control" class="equipment-image">
-                        <span class="equipment-badge badge-new">New Arrival</span>
-                    </figure>
-                    <div class="equipment-content">
-                        <h3 class="equipment-name">Gooseneck Kettle</h3>
-                        <p class="equipment-description">Variable temperature electric kettle with precision spout for controlled pouring. Essential for pour-over and tea brewing enthusiasts.</p>
-                        <div class="usage-tips">
-                            <h4 class="tips-title">Brewing Tips:</h4>
-                            <ul class="tips-list">
-                                <li>Set to 93-96°C for optimal coffee extraction</li>
-                                <li>Use slow, steady pours for even saturation</li>
-                                <li>Hold close to coffee bed for precision</li>
-                            </ul>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Equipment Card 6 -->
-                <article class="equipment-card">
-                    <figure class="equipment-image-wrapper">
-                        <img src="images/aeropress.jpeg" alt="Aeropress coffee maker with filters and accessories" class="equipment-image">
-                    </figure>
-                    <div class="equipment-content">
-                        <h3 class="equipment-name">AeroPress</h3>
-                        <p class="equipment-description">Versatile and portable brewing device using air pressure to create smooth, rich coffee. Perfect for travel and experimenting with brew recipes.</p>
-                        <div class="usage-tips">
-                            <h4 class="tips-title">Brewing Tips:</h4>
-                            <ul class="tips-list">
-                                <li>Try inverted method for fuller extraction</li>
-                                <li>Use medium-fine grind for standard recipe</li>
-                                <li>Experiment with steep times (1-2 minutes)</li>
-                            </ul>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Equipment Card 7 -->
-                <article class="equipment-card">
-                    <figure class="equipment-image-wrapper">
-                        <img src="images/cold brew maker.jpeg" alt="Cold brew coffee maker with filtration system" class="equipment-image">
-                    </figure>
-                    <div class="equipment-content">
-                        <h3 class="equipment-name">Cold Brew Maker</h3>
-                        <p class="equipment-description">Slow-drip cold brew tower with adjustable flow rate. Creates smooth, low-acidity concentrate perfect for iced coffee and cocktails.</p>
-                        <div class="usage-tips">
-                            <h4 class="tips-title">Brewing Tips:</h4>
-                            <ul class="tips-list">
-                                <li>Use coarse grind and steep for 12-24 hours</li>
-                                <li>Dilute concentrate 1:1 with water or milk</li>
-                                <li>Store concentrate refrigerated up to 2 weeks</li>
-                            </ul>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Equipment Card 8 -->
-                <article class="equipment-card">
-                    <figure class="equipment-image-wrapper">
-                        <img src="images/chemex coffee maker.jpeg" alt="Chemex glass coffee maker with wooden collar" class="equipment-image">
-                        <span class="equipment-badge badge-featured">Featured</span>
-                    </figure>
-                    <div class="equipment-content">
-                        <h3 class="equipment-name">Chemex Coffee Maker</h3>
-                        <p class="equipment-description">Iconic hourglass design with thick paper filters produces exceptionally clean, bright coffee. A beautiful centerpiece for any kitchen.</p>
-                        <div class="usage-tips">
-                            <h4 class="tips-title">Brewing Tips:</h4>
-                            <ul class="tips-list">
-                                <li>Rinse filter with hot water before brewing</li>
-                                <li>Use medium-coarse grind for balanced extraction</li>
-                                <li>Total brew time should be 3.5-4.5 minutes</li>
-                            </ul>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Equipment Card 9 -->
-                <article class="equipment-card">
-                    <figure class="equipment-image-wrapper">
-                        <img src="images/moka pot.jpeg" alt="Moka pot stovetop espresso maker in stainless steel" class="equipment-image">
-                    </figure>
-                    <div class="equipment-content">
-                        <h3 class="equipment-name">Moka Pot</h3>
-                        <p class="equipment-description">Traditional Italian stovetop espresso maker. Produces strong, full-bodied coffee with rich crema using steam pressure extraction.</p>
-                        <div class="usage-tips">
-                            <h4 class="tips-title">Brewing Tips:</h4>
-                            <ul class="tips-list">
-                                <li>Fill water chamber to just below safety valve</li>
-                                <li>Use medium heat and remove when gurgling starts</li>
-                                <li>Clean with water only, no soap</li>
-                            </ul>
-                        </div>
-                    </div>
-                </article>
-
+      <div class="container">
+        <!-- Equipment Grid -->
+        <div class="equipment-grid">
+          <!-- Equipment Card 1 -->
+          <article class="equipment-card">
+            <figure class="equipment-image-wrapper">
+              <img
+                src="images/espresso machine.jpeg"
+                alt="Professional espresso machine with dual boiler system"
+                class="equipment-image"
+              />
+              <span class="equipment-badge badge-bestseller">Bestseller</span>
+            </figure>
+            <div class="equipment-content">
+              <h3 class="equipment-name">Professional Espresso Machine</h3>
+              <p class="equipment-description">
+                Dual boiler system with PID temperature control ensures precise
+                extraction and consistent steam pressure for café-quality
+                espresso at home.
+              </p>
+              <div class="usage-tips">
+                <h4 class="tips-title">Brewing Tips:</h4>
+                <ul class="tips-list">
+                  <li>Preheat machine for 20 minutes before brewing</li>
+                  <li>Use 18-20g of finely ground coffee for double shots</li>
+                  <li>Maintain water temperature at 93-96°C</li>
+                </ul>
+              </div>
             </div>
+          </article>
+
+          <!-- Equipment Card 2 -->
+          <article class="equipment-card">
+            <figure class="equipment-image-wrapper">
+              <img
+                src="images/pour over device.jpeg"
+                alt="Copper pour-over dripper with wooden handle"
+                class="equipment-image"
+              />
+              <span class="equipment-badge badge-featured">Featured</span>
+            </figure>
+            <div class="equipment-content">
+              <h3 class="equipment-name">Copper Pour-Over Dripper</h3>
+              <p class="equipment-description">
+                Handcrafted copper dripper with superior heat retention and
+                elegant design. Perfect for bringing out the delicate notes in
+                single-origin beans.
+              </p>
+              <div class="usage-tips">
+                <h4 class="tips-title">Brewing Tips:</h4>
+                <ul class="tips-list">
+                  <li>Use medium-fine grind, similar to table salt</li>
+                  <li>Start with a 30-second bloom phase</li>
+                  <li>Pour in circular motions for even extraction</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- Equipment Card 3 -->
+          <article class="equipment-card">
+            <figure class="equipment-image-wrapper">
+              <img
+                src="images/french press.jpeg"
+                alt="French press coffee maker with borosilicate glass"
+                class="equipment-image"
+              />
+            </figure>
+            <div class="equipment-content">
+              <h3 class="equipment-name">French Press</h3>
+              <p class="equipment-description">
+                Classic brewing method with borosilicate glass carafe and
+                stainless steel plunger. Produces full-bodied, rich coffee with
+                natural oils intact.
+              </p>
+              <div class="usage-tips">
+                <h4 class="tips-title">Brewing Tips:</h4>
+                <ul class="tips-list">
+                  <li>Use coarse grind to prevent sediment</li>
+                  <li>Steep for 4 minutes before plunging</li>
+                  <li>Pour immediately to avoid over-extraction</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- Equipment Card 4 -->
+          <article class="equipment-card">
+            <figure class="equipment-image-wrapper">
+              <img
+                src="images/precision burr grinder.jpeg"
+                alt="Precision burr coffee grinder with adjustable settings"
+                class="equipment-image"
+              />
+              <span class="equipment-badge badge-bestseller">Bestseller</span>
+            </figure>
+            <div class="equipment-content">
+              <h3 class="equipment-name">Precision Burr Grinder</h3>
+              <p class="equipment-description">
+                Conical burr grinder with 40 grind settings. From espresso-fine
+                to French press coarse, achieve consistent particle size for
+                optimal extraction.
+              </p>
+              <div class="usage-tips">
+                <h4 class="tips-title">Usage Tips:</h4>
+                <ul class="tips-list">
+                  <li>Grind beans immediately before brewing</li>
+                  <li>Clean burrs weekly for best performance</li>
+                  <li>Adjust settings based on brewing method</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- Equipment Card 5 -->
+          <article class="equipment-card">
+            <figure class="equipment-image-wrapper">
+              <img
+                src="images/gooseneck kettle.jpeg"
+                alt="Gooseneck electric kettle with temperature control"
+                class="equipment-image"
+              />
+              <span class="equipment-badge badge-new">New Arrival</span>
+            </figure>
+            <div class="equipment-content">
+              <h3 class="equipment-name">Gooseneck Kettle</h3>
+              <p class="equipment-description">
+                Variable temperature electric kettle with precision spout for
+                controlled pouring. Essential for pour-over and tea brewing
+                enthusiasts.
+              </p>
+              <div class="usage-tips">
+                <h4 class="tips-title">Brewing Tips:</h4>
+                <ul class="tips-list">
+                  <li>Set to 93-96°C for optimal coffee extraction</li>
+                  <li>Use slow, steady pours for even saturation</li>
+                  <li>Hold close to coffee bed for precision</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- Equipment Card 6 -->
+          <article class="equipment-card">
+            <figure class="equipment-image-wrapper">
+              <img
+                src="images/aeropress.jpeg"
+                alt="Aeropress coffee maker with filters and accessories"
+                class="equipment-image"
+              />
+            </figure>
+            <div class="equipment-content">
+              <h3 class="equipment-name">AeroPress</h3>
+              <p class="equipment-description">
+                Versatile and portable brewing device using air pressure to
+                create smooth, rich coffee. Perfect for travel and experimenting
+                with brew recipes.
+              </p>
+              <div class="usage-tips">
+                <h4 class="tips-title">Brewing Tips:</h4>
+                <ul class="tips-list">
+                  <li>Try inverted method for fuller extraction</li>
+                  <li>Use medium-fine grind for standard recipe</li>
+                  <li>Experiment with steep times (1-2 minutes)</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- Equipment Card 7 -->
+          <article class="equipment-card">
+            <figure class="equipment-image-wrapper">
+              <img
+                src="images/cold brew maker.jpeg"
+                alt="Cold brew coffee maker with filtration system"
+                class="equipment-image"
+              />
+            </figure>
+            <div class="equipment-content">
+              <h3 class="equipment-name">Cold Brew Maker</h3>
+              <p class="equipment-description">
+                Slow-drip cold brew tower with adjustable flow rate. Creates
+                smooth, low-acidity concentrate perfect for iced coffee and
+                cocktails.
+              </p>
+              <div class="usage-tips">
+                <h4 class="tips-title">Brewing Tips:</h4>
+                <ul class="tips-list">
+                  <li>Use coarse grind and steep for 12-24 hours</li>
+                  <li>Dilute concentrate 1:1 with water or milk</li>
+                  <li>Store concentrate refrigerated up to 2 weeks</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- Equipment Card 8 -->
+          <article class="equipment-card">
+            <figure class="equipment-image-wrapper">
+              <img
+                src="images/chemex coffee maker.jpeg"
+                alt="Chemex glass coffee maker with wooden collar"
+                class="equipment-image"
+              />
+              <span class="equipment-badge badge-featured">Featured</span>
+            </figure>
+            <div class="equipment-content">
+              <h3 class="equipment-name">Chemex Coffee Maker</h3>
+              <p class="equipment-description">
+                Iconic hourglass design with thick paper filters produces
+                exceptionally clean, bright coffee. A beautiful centerpiece for
+                any kitchen.
+              </p>
+              <div class="usage-tips">
+                <h4 class="tips-title">Brewing Tips:</h4>
+                <ul class="tips-list">
+                  <li>Rinse filter with hot water before brewing</li>
+                  <li>Use medium-coarse grind for balanced extraction</li>
+                  <li>Total brew time should be 3.5-4.5 minutes</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- Equipment Card 9 -->
+          <article class="equipment-card">
+            <figure class="equipment-image-wrapper">
+              <img
+                src="images/moka pot.jpeg"
+                alt="Moka pot stovetop espresso maker in stainless steel"
+                class="equipment-image"
+              />
+            </figure>
+            <div class="equipment-content">
+              <h3 class="equipment-name">Moka Pot</h3>
+              <p class="equipment-description">
+                Traditional Italian stovetop espresso maker. Produces strong,
+                full-bodied coffee with rich crema using steam pressure
+                extraction.
+              </p>
+              <div class="usage-tips">
+                <h4 class="tips-title">Brewing Tips:</h4>
+                <ul class="tips-list">
+                  <li>Fill water chamber to just below safety valve</li>
+                  <li>Use medium heat and remove when gurgling starts</li>
+                  <li>Clean with water only, no soap</li>
+                </ul>
+              </div>
+            </div>
+          </article>
         </div>
+      </div>
     </section>
 
+    <script src="cart.js"></script>
+    <script src="add-to-cart.js"></script>
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
-

@@ -1,369 +1,551 @@
 <!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bean Boutique - Crafted Coffee. Shared Moments.</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
     <header class="hero-section">
-        <!-- Navigation Bar -->
-        <nav class="navbar">
-            <div class="nav-container">
-                <div class="brand">
-                    <h2 class="brand-name">Bean Boutique</h2>
-                </div>
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="coffee-selection.html">Our Coffee</a></li>
-                    <li><a href="equipment-selection.html">Equipment</a></li>
-                    <li><a href="events-selection.html">Events</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-
-        <!-- Hero Content -->
-        <section class="hero-content">
-            <div class="hero-text">
-                <h1 class="hero-heading">Crafted Coffee.<br>Shared Moments.</h1>
-                <p class="hero-subheading">Where artisan roasts meet authentic connections in every cup</p>
-                <div class="hero-buttons">
-                    <a href="#explore" class="btn btn-primary">Explore Our Coffee</a>
-                    <a href="#community" class="btn btn-secondary">Join Our Community</a>
-                </div>
-            </div>
-        </section>
-        <div class="modal-overlay">
-            <div class="modal">
-                <!-- Close button -->
-                <button class="close-btn" onclick="closeModal()" aria-label="Close modal">×</button>
-    
-                <!-- Modal Grid Container -->
-                <div class="modal-grid">
-                    <!-- Left Side: Coffee Beans Image -->
-                    <div class="modal-image-container">
-                        <img src="images/coffee-beans.jpeg" alt="Coffee beans" class="modal-coffee-beans-img">
-                    </div>
-    
-                    <!-- Right Side: Content -->
-                    <div class="modal-content-wrapper">
-                        <!-- Modal content -->
-                        <div class="modal-header">
-                            <h1 class="modal-title">Welcome to<br>Bean Boutique</h1>
-                            <div class="discount-badge">10% OFF</div>
-                            <p class="modal-subtitle">Sign up for our newsletter and enjoy 10% off your first order. Plus, get exclusive updates on new roasts and events!</p>
-                        </div>
-    
-                        <!-- Form -->
-                        <form class="modal-form" onsubmit="handleSubmit(event)">
-                            <div class="input-wrapper">
-                                <input 
-                                    type="email" 
-                                    class="email-input" 
-                                    placeholder="Enter your email address"
-                                    required
-                                    aria-label="Email address"
-                                >
-                            </div>
-                            <button type="submit" class="submit-btn">Get My Discount</button>
-                        </form>
-    
-                        <!-- Footer -->
-                        <div class="modal-footer">
-                            By signing up, you agree to our <a href="#terms">Terms</a> and <a href="#privacy">Privacy Policy</a>.
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <!-- Navigation Bar -->
+      <nav class="navbar">
+        <div class="nav-container">
+          <div class="brand">
+            <h2 class="brand-name">Bean Boutique</h2>
+          </div>
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="coffee-selection.html">Our Coffee</a></li>
+            <li><a href="equipment-selection.html">Equipment</a></li>
+            <li><a href="events-selection.html">Events</a></li>
+            <li><a href="offers.html">Offers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+              <a href="cart.html" class="cart-link">
+                <svg
+                  class="cart-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"
+                  ></path>
+                  <line x1="3" y1="6" x2="21" y2="6"></line>
+                  <path d="M16 10a4 4 0 0 1-8 0"></path>
+                </svg>
+                <span class="cart-badge">0</span>
+              </a>
+            </li>
+          </ul>
         </div>
-    
+      </nav>
+
+      <!-- Hero Content -->
+      <section class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-heading">Crafted Coffee.<br />Shared Moments.</h1>
+          <p class="hero-subheading">
+            Where artisan roasts meet authentic connections in every cup
+          </p>
+          <div class="hero-buttons">
+            <a href="#explore" class="btn btn-primary">Explore Our Coffee</a>
+            <a href="#community" class="btn btn-secondary"
+              >Join Our Community</a
+            >
+          </div>
+        </div>
+      </section>
+      <div class="modal-overlay">
+        <div class="modal">
+          <!-- Close button -->
+          <button
+            class="close-btn"
+            onclick="closeModal()"
+            aria-label="Close modal"
+          >
+            ×
+          </button>
+
+          <!-- Modal Grid Container -->
+          <div class="modal-grid">
+            <!-- Left Side: Coffee Beans Image -->
+            <div class="modal-image-container">
+              <img
+                src="images/coffee-beans.jpeg"
+                alt="Coffee beans"
+                class="modal-coffee-beans-img"
+              />
+            </div>
+
+            <!-- Right Side: Content -->
+            <div class="modal-content-wrapper">
+              <!-- Modal content -->
+              <div class="modal-header">
+                <h1 class="modal-title">Welcome to<br />Bean Boutique</h1>
+                <div class="discount-badge">10% OFF</div>
+                <p class="modal-subtitle">
+                  Sign up for our newsletter and enjoy 10% off your first order.
+                  Plus, get exclusive updates on new roasts and events!
+                </p>
+              </div>
+
+              <!-- Form -->
+              <form class="modal-form" onsubmit="handleSubmit(event)">
+                <div class="input-wrapper">
+                  <input
+                    type="email"
+                    class="email-input"
+                    placeholder="Enter your email address"
+                    required
+                    aria-label="Email address"
+                  />
+                </div>
+                <button type="submit" class="submit-btn">
+                  Get My Discount
+                </button>
+              </form>
+
+              <!-- Footer -->
+              <div class="modal-footer">
+                By signing up, you agree to our <a href="#terms">Terms</a> and
+                <a href="#privacy">Privacy Policy</a>.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
 
     <!-- Coffee Selection Section -->
     <section class="coffee-selection" id="coffee">
-        <div class="container">
-            <!-- Section Header -->
-            <header class="section-header">
-                <h2 class="section-title">Our Coffee Selection</h2>
-                <p class="section-subtitle">Discover our carefully curated collection of artisan roasts and single-origin beans, each with its own unique story and flavor profile.</p>
-            </header>
+      <div class="container">
+        <!-- Section Header -->
+        <header class="section-header">
+          <h2 class="section-title">Our Coffee Selection</h2>
+          <p class="section-subtitle">
+            Discover our carefully curated collection of artisan roasts and
+            single-origin beans, each with its own unique story and flavor
+            profile.
+          </p>
+        </header>
 
-            <!-- Coffee Grid -->
-            <div class="coffee-grid">
-                
-                <!-- Coffee Card 1 -->
-                <article class="coffee-card">
-                    <figure class="coffee-image-wrapper">
-                        <img src="images/ethopian.jpeg" alt="Ethiopian Yirgacheffe single-origin coffee beans" class="coffee-image">
-                        <span class="coffee-badge badge-origin">Single Origin</span>
-                    </figure>
-                    <div class="coffee-content">
-                        <h3 class="coffee-name">Ethiopian Yirgacheffe</h3>
-                        <p class="coffee-description">Bright and floral with delicate citrus notes, this Ethiopian heirloom variety offers a tea-like body and complex sweetness.</p>
-                        <div class="tasting-notes">
-                            <span class="note">Bergamot</span>
-                            <span class="note">Blueberry</span>
-                            <span class="note">Jasmine</span>
-                        </div>
-                        <div class="brewing-methods">
-                            <span class="method">Pour Over</span>
-                            <span class="method">Chemex</span>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Coffee Card 2 -->
-                <article class="coffee-card">
-                    <figure class="coffee-image-wrapper">
-                        <img src="images/house-blend.jpeg" alt="House Blend artisan coffee" class="coffee-image">
-                        <span class="coffee-badge badge-blend">Signature Blend</span>
-                    </figure>
-                    <div class="coffee-content">
-                        <h3 class="coffee-name">House Blend</h3>
-                        <p class="coffee-description">Our signature blend balances rich chocolate notes with a smooth caramel finish, perfect for everyday enjoyment.</p>
-                        <div class="tasting-notes">
-                            <span class="note">Chocolate</span>
-                            <span class="note">Caramel</span>
-                            <span class="note">Hazelnut</span>
-                        </div>
-                        <div class="brewing-methods">
-                            <span class="method">Espresso</span>
-                            <span class="method">Drip</span>
-                            <span class="method">French Press</span>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Coffee Card 3 -->
-                <article class="coffee-card">
-                    <figure class="coffee-image-wrapper">
-                        <img src="images/columbian.jpeg" alt="Colombian Supremo single-origin coffee" class="coffee-image">
-                        <span class="coffee-badge badge-origin">Single Origin</span>
-                    </figure>
-                    <div class="coffee-content">
-                        <h3 class="coffee-name">Colombian Supremo</h3>
-                        <p class="coffee-description">Medium-bodied with balanced acidity, featuring notes of brown sugar and hints of tropical fruit from high-altitude farms.</p>
-                        <div class="tasting-notes">
-                            <span class="note">Brown Sugar</span>
-                            <span class="note">Red Apple</span>
-                            <span class="note">Almond</span>
-                        </div>
-                        <div class="brewing-methods">
-                            <span class="method">Espresso</span>
-                            <span class="method">Pour Over</span>
-                        </div>
-                    </div>
-                </article>
-
+        <!-- Coffee Grid -->
+        <div class="coffee-grid">
+          <!-- Coffee Card 1 -->
+          <article class="coffee-card">
+            <figure class="coffee-image-wrapper">
+              <img
+                src="images/ethopian.jpeg"
+                alt="Ethiopian Yirgacheffe single-origin coffee beans"
+                class="coffee-image"
+              />
+              <span class="coffee-badge badge-origin">Single Origin</span>
+            </figure>
+            <div class="coffee-content">
+              <h3 class="coffee-name">Ethiopian Yirgacheffe</h3>
+              <p class="coffee-description">
+                Bright and floral with delicate citrus notes, this Ethiopian
+                heirloom variety offers a tea-like body and complex sweetness.
+              </p>
+              <div class="tasting-notes">
+                <span class="note">Bergamot</span>
+                <span class="note">Blueberry</span>
+                <span class="note">Jasmine</span>
+              </div>
+              <div class="brewing-methods">
+                <span class="method">Pour Over</span>
+                <span class="method">Chemex</span>
+              </div>
             </div>
+          </article>
 
-            <!-- View More Button -->
-            <div class="view-more-container">
-                <a href="coffee-selection.html" class="btn btn-primary view-more-btn">View More</a>
+          <!-- Coffee Card 2 -->
+          <article class="coffee-card">
+            <figure class="coffee-image-wrapper">
+              <img
+                src="images/house-blend.jpeg"
+                alt="House Blend artisan coffee"
+                class="coffee-image"
+              />
+              <span class="coffee-badge badge-blend">Signature Blend</span>
+            </figure>
+            <div class="coffee-content">
+              <h3 class="coffee-name">House Blend</h3>
+              <p class="coffee-description">
+                Our signature blend balances rich chocolate notes with a smooth
+                caramel finish, perfect for everyday enjoyment.
+              </p>
+              <div class="tasting-notes">
+                <span class="note">Chocolate</span>
+                <span class="note">Caramel</span>
+                <span class="note">Hazelnut</span>
+              </div>
+              <div class="brewing-methods">
+                <span class="method">Espresso</span>
+                <span class="method">Drip</span>
+                <span class="method">French Press</span>
+              </div>
             </div>
+          </article>
+
+          <!-- Coffee Card 3 -->
+          <article class="coffee-card">
+            <figure class="coffee-image-wrapper">
+              <img
+                src="images/columbian.jpeg"
+                alt="Colombian Supremo single-origin coffee"
+                class="coffee-image"
+              />
+              <span class="coffee-badge badge-origin">Single Origin</span>
+            </figure>
+            <div class="coffee-content">
+              <h3 class="coffee-name">Colombian Supremo</h3>
+              <p class="coffee-description">
+                Medium-bodied with balanced acidity, featuring notes of brown
+                sugar and hints of tropical fruit from high-altitude farms.
+              </p>
+              <div class="tasting-notes">
+                <span class="note">Brown Sugar</span>
+                <span class="note">Red Apple</span>
+                <span class="note">Almond</span>
+              </div>
+              <div class="brewing-methods">
+                <span class="method">Espresso</span>
+                <span class="method">Pour Over</span>
+              </div>
+            </div>
+          </article>
         </div>
+
+        <!-- View More Button -->
+        <div class="view-more-container">
+          <a href="coffee-selection.html" class="btn btn-primary view-more-btn"
+            >View More</a
+          >
+        </div>
+      </div>
     </section>
 
     <!-- Brewing Equipment Section -->
     <section class="brewing-equipment" id="equipment">
-        <div class="container">
-            <!-- Section Header -->
-            <header class="section-header">
-                <h2 class="section-title">Brewing Equipment</h2>
-                <p class="section-subtitle">Premium tools crafted for the perfect cup. Explore our curated collection of brewing essentials, from espresso machines to pour-over drippers.</p>
-            </header>
+      <div class="container">
+        <!-- Section Header -->
+        <header class="section-header">
+          <h2 class="section-title">Brewing Equipment</h2>
+          <p class="section-subtitle">
+            Premium tools crafted for the perfect cup. Explore our curated
+            collection of brewing essentials, from espresso machines to
+            pour-over drippers.
+          </p>
+        </header>
 
-            <!-- Equipment Grid -->
-            <div class="equipment-grid">
-                
-                <!-- Equipment Card 1 -->
-                <article class="equipment-card">
-                    <figure class="equipment-image-wrapper">
-                        <img src="images/espresso machine.jpeg" alt="Professional espresso machine with dual boiler system" class="equipment-image">
-                        <span class="equipment-badge badge-bestseller">Bestseller</span>
-                    </figure>
-                    <div class="equipment-content">
-                        <h3 class="equipment-name">Professional Espresso Machine</h3>
-                        <p class="equipment-description">Dual boiler system with PID temperature control ensures precise extraction and consistent steam pressure for café-quality espresso at home.</p>
-                        <div class="usage-tips">
-                            <h4 class="tips-title">Brewing Tips:</h4>
-                            <ul class="tips-list">
-                                <li>Preheat machine for 20 minutes before brewing</li>
-                                <li>Use 18-20g of finely ground coffee for double shots</li>
-                                <li>Maintain water temperature at 93-96°C</li>
-                            </ul>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Equipment Card 2 -->
-                <article class="equipment-card">
-                    <figure class="equipment-image-wrapper">
-                        <img src="images/pour over device.jpeg" alt="Copper pour-over dripper with wooden handle" class="equipment-image">
-                        <span class="equipment-badge badge-featured">Featured</span>
-                    </figure>
-                    <div class="equipment-content">
-                        <h3 class="equipment-name">Copper Pour-Over Dripper</h3>
-                        <p class="equipment-description">Handcrafted copper dripper with superior heat retention and elegant design. Perfect for bringing out the delicate notes in single-origin beans.</p>
-                        <div class="usage-tips">
-                            <h4 class="tips-title">Brewing Tips:</h4>
-                            <ul class="tips-list">
-                                <li>Use medium-fine grind, similar to table salt</li>
-                                <li>Start with a 30-second bloom phase</li>
-                                <li>Pour in circular motions for even extraction</li>
-                            </ul>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Equipment Card 3 -->
-                <article class="equipment-card">
-                    <figure class="equipment-image-wrapper">
-                        <img src="images/french press.jpeg" alt="French press coffee maker with borosilicate glass" class="equipment-image">
-                    </figure>
-                    <div class="equipment-content">
-                        <h3 class="equipment-name">French Press</h3>
-                        <p class="equipment-description">Classic brewing method with borosilicate glass carafe and stainless steel plunger. Produces full-bodied, rich coffee with natural oils intact.</p>
-                        <div class="usage-tips">
-                            <h4 class="tips-title">Brewing Tips:</h4>
-                            <ul class="tips-list">
-                                <li>Use coarse grind to prevent sediment</li>
-                                <li>Steep for 4 minutes before plunging</li>
-                                <li>Pour immediately to avoid over-extraction</li>
-                            </ul>
-                        </div>
-                    </div>
-                </article>
-
+        <!-- Equipment Grid -->
+        <div class="equipment-grid">
+          <!-- Equipment Card 1 -->
+          <article class="equipment-card">
+            <figure class="equipment-image-wrapper">
+              <img
+                src="images/espresso machine.jpeg"
+                alt="Professional espresso machine with dual boiler system"
+                class="equipment-image"
+              />
+              <span class="equipment-badge badge-bestseller">Bestseller</span>
+            </figure>
+            <div class="equipment-content">
+              <h3 class="equipment-name">Professional Espresso Machine</h3>
+              <p class="equipment-description">
+                Dual boiler system with PID temperature control ensures precise
+                extraction and consistent steam pressure for café-quality
+                espresso at home.
+              </p>
+              <div class="usage-tips">
+                <h4 class="tips-title">Brewing Tips:</h4>
+                <ul class="tips-list">
+                  <li>Preheat machine for 20 minutes before brewing</li>
+                  <li>Use 18-20g of finely ground coffee for double shots</li>
+                  <li>Maintain water temperature at 93-96°C</li>
+                </ul>
+              </div>
             </div>
+          </article>
 
-            <!-- View More Button -->
-            <div class="view-more-container">
-                <a href="equipment-selection.html" class="btn btn-primary view-more-btn">View More</a>
+          <!-- Equipment Card 2 -->
+          <article class="equipment-card">
+            <figure class="equipment-image-wrapper">
+              <img
+                src="images/pour over device.jpeg"
+                alt="Copper pour-over dripper with wooden handle"
+                class="equipment-image"
+              />
+              <span class="equipment-badge badge-featured">Featured</span>
+            </figure>
+            <div class="equipment-content">
+              <h3 class="equipment-name">Copper Pour-Over Dripper</h3>
+              <p class="equipment-description">
+                Handcrafted copper dripper with superior heat retention and
+                elegant design. Perfect for bringing out the delicate notes in
+                single-origin beans.
+              </p>
+              <div class="usage-tips">
+                <h4 class="tips-title">Brewing Tips:</h4>
+                <ul class="tips-list">
+                  <li>Use medium-fine grind, similar to table salt</li>
+                  <li>Start with a 30-second bloom phase</li>
+                  <li>Pour in circular motions for even extraction</li>
+                </ul>
+              </div>
             </div>
+          </article>
+
+          <!-- Equipment Card 3 -->
+          <article class="equipment-card">
+            <figure class="equipment-image-wrapper">
+              <img
+                src="images/french press.jpeg"
+                alt="French press coffee maker with borosilicate glass"
+                class="equipment-image"
+              />
+            </figure>
+            <div class="equipment-content">
+              <h3 class="equipment-name">French Press</h3>
+              <p class="equipment-description">
+                Classic brewing method with borosilicate glass carafe and
+                stainless steel plunger. Produces full-bodied, rich coffee with
+                natural oils intact.
+              </p>
+              <div class="usage-tips">
+                <h4 class="tips-title">Brewing Tips:</h4>
+                <ul class="tips-list">
+                  <li>Use coarse grind to prevent sediment</li>
+                  <li>Steep for 4 minutes before plunging</li>
+                  <li>Pour immediately to avoid over-extraction</li>
+                </ul>
+              </div>
+            </div>
+          </article>
         </div>
+
+        <!-- View More Button -->
+        <div class="view-more-container">
+          <a
+            href="equipment-selection.html"
+            class="btn btn-primary view-more-btn"
+            >View More</a
+          >
+        </div>
+      </div>
     </section>
 
     <!-- Events & Workshops Section -->
     <section class="events-workshops" id="events">
-        <div class="container">
-            <!-- Section Header -->
-            <header class="section-header">
-                <h2 class="section-title">Events & Workshops</h2>
-                <p class="section-subtitle">Join us for immersive coffee experiences. From hands-on brewing classes to exclusive tastings, discover the art and science of exceptional coffee.</p>
-            </header>
+      <div class="container">
+        <!-- Section Header -->
+        <header class="section-header">
+          <h2 class="section-title">Events & Workshops</h2>
+          <p class="section-subtitle">
+            Join us for immersive coffee experiences. From hands-on brewing
+            classes to exclusive tastings, discover the art and science of
+            exceptional coffee.
+          </p>
+        </header>
 
-            <!-- Events Grid -->
-            <div class="events-grid">
-                
-                <!-- Event Card 1 -->
-                <article class="event-card">
-                    <figure class="event-image-wrapper">
-                        <img src="/images/event-01.jpg" alt="Coffee cupping and tasting session with multiple coffee varieties" class="event-image">
-                        <span class="event-badge badge-tasting">Coffee Tasting</span>
-                    </figure>
-                    <div class="event-content">
-                        <div class="event-header">
-                            <h3 class="event-title">Origin Exploration Tasting</h3>
-                            <div class="event-datetime">
-                                <time datetime="2025-01-18">
-                                    <span class="event-date">January 18, 2025</span>
-                                    <span class="event-time">2:00 PM - 4:00 PM</span>
-                                </time>
-                            </div>
-                        </div>
-                        <p class="event-description">Journey through five distinct coffee origins in this guided tasting experience. Learn to identify flavor profiles, processing methods, and regional characteristics.</p>
-                        <form class="registration-form">
-                            <h4 class="form-title">Register for this event</h4>
-                            <div class="form-group">
-                                <label for="event1-name" class="form-label">Full Name</label>
-                                <input type="text" id="event1-name" name="name" class="form-input" placeholder="Enter your name" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="event1-email" class="form-label">Email Address</label>
-                                <input type="email" id="event1-email" name="email" class="form-input" placeholder="your.email@example.com" required>
-                            </div>
-                            <button type="submit" class="register-btn">Secure Your Spot</button>
-                        </form>
-                    </div>
-                </article>
-
-                <!-- Event Card 2 -->
-                <article class="event-card">
-                    <figure class="event-image-wrapper">
-                        <img src="/images/event-02.jpg" alt="Hands-on pour over brewing class with instructor guidance" class="event-image">
-                        <span class="event-badge badge-class">Brewing Class</span>
-                    </figure>
-                    <div class="event-content">
-                        <div class="event-header">
-                            <h3 class="event-title">Pour Over Mastery Workshop</h3>
-                            <div class="event-datetime">
-                                <time datetime="2025-01-22">
-                                    <span class="event-date">January 22, 2025</span>
-                                    <span class="event-time">6:00 PM - 8:00 PM</span>
-                                </time>
-                            </div>
-                        </div>
-                        <p class="event-description">Master the art of pour-over brewing in this hands-on workshop. Perfect your technique with expert guidance and take home professional brewing secrets.</p>
-                        <form class="registration-form">
-                            <h4 class="form-title">Register for this event</h4>
-                            <div class="form-group">
-                                <label for="event2-name" class="form-label">Full Name</label>
-                                <input type="text" id="event2-name" name="name" class="form-input" placeholder="Enter your name" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="event2-email" class="form-label">Email Address</label>
-                                <input type="email" id="event2-email" name="email" class="form-input" placeholder="your.email@example.com" required>
-                            </div>
-                            <button type="submit" class="register-btn">Secure Your Spot</button>
-                        </form>
-                    </div>
-                </article>
-
-                <!-- Event Card 3 -->
-                <article class="event-card">
-                    <figure class="event-image-wrapper">
-                        <img src="/images/event-03.jpg" alt="Meet the roaster session with coffee roasting demonstration" class="event-image">
-                        <span class="event-badge badge-roaster">Meet the Roaster</span>
-                    </figure>
-                    <div class="event-content">
-                        <div class="event-header">
-                            <h3 class="event-title">Behind the Beans: Roasting Session</h3>
-                            <div class="event-datetime">
-                                <time datetime="2025-01-25">
-                                    <span class="event-date">January 25, 2025</span>
-                                    <span class="event-time">10:00 AM - 12:00 PM</span>
-                                </time>
-                            </div>
-                        </div>
-                        <p class="event-description">Meet our head roaster and witness the transformation from green bean to perfectly roasted coffee. Discover roasting profiles and the science behind each batch.</p>
-                        <form class="registration-form">
-                            <h4 class="form-title">Register for this event</h4>
-                            <div class="form-group">
-                                <label for="event3-name" class="form-label">Full Name</label>
-                                <input type="text" id="event3-name" name="name" class="form-input" placeholder="Enter your name" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="event3-email" class="form-label">Email Address</label>
-                                <input type="email" id="event3-email" name="email" class="form-input" placeholder="your.email@example.com" required>
-                            </div>
-                            <button type="submit" class="register-btn">Secure Your Spot</button>
-                        </form>
-                    </div>
-                </article>
-
+        <!-- Events Grid -->
+        <div class="events-grid">
+          <!-- Event Card 1 -->
+          <article class="event-card">
+            <figure class="event-image-wrapper">
+              <img
+                src="images/coffee tasting.jpg"
+                alt="Coffee cupping and tasting session with multiple coffee varieties"
+                class="event-image"
+              />
+              <span class="event-badge badge-tasting">Coffee Tasting</span>
+            </figure>
+            <div class="event-content">
+              <div class="event-header">
+                <h3 class="event-title">Origin Exploration Tasting</h3>
+                <div class="event-datetime">
+                  <time datetime="2025-01-18">
+                    <span class="event-date">January 18, 2025</span>
+                    <span class="event-time">2:00 PM - 4:00 PM</span>
+                  </time>
+                </div>
+              </div>
+              <p class="event-description">
+                Journey through five distinct coffee origins in this guided
+                tasting experience. Learn to identify flavor profiles,
+                processing methods, and regional characteristics.
+              </p>
+              <form class="registration-form">
+                <h4 class="form-title">Register for this event</h4>
+                <div class="form-group">
+                  <label for="event1-name" class="form-label">Full Name</label>
+                  <input
+                    type="text"
+                    id="event1-name"
+                    name="name"
+                    class="form-input"
+                    placeholder="Enter your name"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="event1-email" class="form-label"
+                    >Email Address</label
+                  >
+                  <input
+                    type="email"
+                    id="event1-email"
+                    name="email"
+                    class="form-input"
+                    placeholder="your.email@example.com"
+                    required
+                  />
+                </div>
+                <button type="submit" class="register-btn">
+                  Secure Your Spot
+                </button>
+              </form>
             </div>
+          </article>
 
-            <!-- View More Button -->
-            <div class="view-more-container">
-                <a href="events-selection.html" class="btn btn-primary view-more-btn">View More</a>
+          <!-- Event Card 2 -->
+          <article class="event-card">
+            <figure class="event-image-wrapper">
+              <img
+                src="images/pour over mastery.jpg"
+                alt="Hands-on pour over brewing class with instructor guidance"
+                class="event-image"
+              />
+              <span class="event-badge badge-class">Brewing Class</span>
+            </figure>
+            <div class="event-content">
+              <div class="event-header">
+                <h3 class="event-title">Pour Over Mastery Workshop</h3>
+                <div class="event-datetime">
+                  <time datetime="2025-01-22">
+                    <span class="event-date">January 22, 2025</span>
+                    <span class="event-time">6:00 PM - 8:00 PM</span>
+                  </time>
+                </div>
+              </div>
+              <p class="event-description">
+                Master the art of pour-over brewing in this hands-on workshop.
+                Perfect your technique with expert guidance and take home
+                professional brewing secrets.
+              </p>
+              <form class="registration-form">
+                <h4 class="form-title">Register for this event</h4>
+                <div class="form-group">
+                  <label for="event2-name" class="form-label">Full Name</label>
+                  <input
+                    type="text"
+                    id="event2-name"
+                    name="name"
+                    class="form-input"
+                    placeholder="Enter your name"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="event2-email" class="form-label"
+                    >Email Address</label
+                  >
+                  <input
+                    type="email"
+                    id="event2-email"
+                    name="email"
+                    class="form-input"
+                    placeholder="your.email@example.com"
+                    required
+                  />
+                </div>
+                <button type="submit" class="register-btn">
+                  Secure Your Spot
+                </button>
+              </form>
             </div>
+          </article>
+
+          <!-- Event Card 3 -->
+          <article class="event-card">
+            <figure class="event-image-wrapper">
+              <img
+                src="images/meet the roaster.jpg"
+                alt="Meet the roaster session with coffee roasting demonstration"
+                class="event-image"
+              />
+              <span class="event-badge badge-roaster">Meet the Roaster</span>
+            </figure>
+            <div class="event-content">
+              <div class="event-header">
+                <h3 class="event-title">Behind the Beans: Roasting Session</h3>
+                <div class="event-datetime">
+                  <time datetime="2025-01-25">
+                    <span class="event-date">January 25, 2025</span>
+                    <span class="event-time">10:00 AM - 12:00 PM</span>
+                  </time>
+                </div>
+              </div>
+              <p class="event-description">
+                Meet our head roaster and witness the transformation from green
+                bean to perfectly roasted coffee. Discover roasting profiles and
+                the science behind each batch.
+              </p>
+              <form class="registration-form">
+                <h4 class="form-title">Register for this event</h4>
+                <div class="form-group">
+                  <label for="event3-name" class="form-label">Full Name</label>
+                  <input
+                    type="text"
+                    id="event3-name"
+                    name="name"
+                    class="form-input"
+                    placeholder="Enter your name"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="event3-email" class="form-label"
+                    >Email Address</label
+                  >
+                  <input
+                    type="email"
+                    id="event3-email"
+                    name="email"
+                    class="form-input"
+                    placeholder="your.email@example.com"
+                    required
+                  />
+                </div>
+                <button type="submit" class="register-btn">
+                  Secure Your Spot
+                </button>
+              </form>
+            </div>
+          </article>
         </div>
+
+        <!-- View More Button -->
+        <div class="view-more-container">
+          <a href="events-selection.html" class="btn btn-primary view-more-btn"
+            >View More</a
+          >
+        </div>
+      </div>
     </section>
 
+    <script src="cart.js"></script>
+    <script src="add-to-cart.js"></script>
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
